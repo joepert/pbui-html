@@ -8,9 +8,15 @@
 	margin-bottom: 20px;
 }
 .bl-schedular-menu .bl-scroll .el-list { padding-top: 0; }
-.bl-schedular-menu .bl-dropdown { margin-left: 7px; }
+.bl-schedular-menu .bl-dropdown {
+	float: left;
+	width: 130px;
+	margin-left: 10px;
+}
 .bl-schedular-menu .el-button.point-bottom-grey-5 {
-	margin-left: 5px;
-	padding: 5px 3px;
-	line-height: 12px;
+	float: right;
+	margin-right: 10px;
+	padding: 5px;
+	height: 14px;
+	line-height: 14px;
 }

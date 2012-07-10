@@ -56,6 +56,7 @@
 
 .el-icon {
 	display: block;
+	cursor: pointer;
 	background-image: url('../images/csg-4ffc010e9f293.png');
 }
 
@@ -70,6 +71,7 @@
 	display: inline-block;
 	box-shadow: 0 0 0 #FFFFFF inset;
 	border-radius: 4px;
+	cursor: pointer;
 	color: #303030;
 	overflow: hidden;
 	background: -moz-linear-gradient(center top , #f9f9f9 0%, #e3e3e3 100%) repeat scroll 0 0 transparent;
@@ -104,6 +106,7 @@
 	margin: 0;
 	padding: 0;
 	font-size: 11px;
+	cursor: pointer;
 	background: none;
 }
 .el-button:hover {
@@ -368,7 +371,7 @@
  * ************************************************************ */
 .bl-scroll {
 	overflow: auto;
-	height: 100px;
+	height: 300px;
 	border-bottom: 1px solid #E2E2E2;
 }
 
