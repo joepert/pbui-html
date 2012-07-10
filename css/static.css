@@ -55,8 +55,9 @@
  * ************************************************************ */
 
 .el-icon {
-	display: block;
+	display: inline-block;
 	cursor: pointer;
+	vertical-align: middle;
 	background-image: url('../images/csg-4ffc010e9f293.png');
 }
 
@@ -100,14 +101,22 @@
 	-ms-transition: 0.5s ease;
 	-o-transition: 0.5s ease;
 	transition: 0.5s ease;
+	display: table;
 }
 .el-button > button {
+	display: table-cell;
+	height: 10px;
 	border: none;
 	margin: 0;
 	padding: 0;
 	font-size: 11px;
 	cursor: pointer;
-	background: none;
+	vertical-align: text;
+}
+.el-button button .el-icon {
+	display: inline-block;
+	vertical-align: middle;
+	
 }
 .el-button:hover {
 	border-width: 1px;
