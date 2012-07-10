@@ -1,15 +1,16 @@
+/* bl-mod-top24 - bl-schedular-menu */
 .bl-schedular-menu {
 	width: 202px;
+	padding-top: 10px;
 }
 .bl-schedular-menu .bl-scroll {
 	border-top: 1px solid #f2f2f2;
 	margin-bottom: 20px;
 }
-.bl-schedular-menu .bl-dropdown {
-	margin-left: 5px;
-}
-
+.bl-schedular-menu .bl-scroll .el-list { padding-top: 0; }
+.bl-schedular-menu .bl-dropdown { margin-left: 7px; }
 .bl-schedular-menu .el-button.point-bottom-grey-5 {
 	margin-left: 5px;
+	padding: 5px 3px;
 	line-height: 12px;
 }
