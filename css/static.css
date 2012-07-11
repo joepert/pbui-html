@@ -58,6 +58,7 @@
 	display: inline-block;
 	cursor: pointer;
 	vertical-align: middle;
+	background-color: none;
 	background-image: url('../images/csg-4ffc010e9f293.png');
 }
 
@@ -65,6 +66,7 @@
  * el-button
  * ************************************************************ */
 .test .el-button {
+	float: left;
 	/* testing */ padding: 20px !important;
 }
 .el-button {
@@ -75,6 +77,7 @@
 	cursor: pointer;
 	color: #303030;
 	overflow: hidden;
+	text-align: center;
 	background: -moz-linear-gradient(center top , #f9f9f9 0%, #e3e3e3 100%) repeat scroll 0 0 transparent;
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f9f9f9), color-stop(100%,#e3e3e3));
 	background: -webkit-linear-gradient(top, #f9f9f9 0%, #e3e3e3 100%);
@@ -86,7 +89,7 @@
 	border-color: #A4A4A4 #ADADAD #969696 #B8B8B8;
 	border-style: solid;
 	border-width: 1px;
-	padding: 5px;
+	padding: 1px 5px !important;
 	cursor: pointer;
 	line-height: 5px;
 	
@@ -105,13 +108,14 @@
 }
 .el-button > button {
 	display: table-cell;
-	height: 10px;
+	height: 15px;
 	border: none;
 	margin: 0;
 	padding: 0;
 	font-size: 11px;
 	cursor: pointer;
-	vertical-align: text;
+	vertical-align: middle;
+	background-color: transparent;
 }
 .el-button button .el-icon {
 	display: inline-block;
@@ -325,8 +329,7 @@
 	-o-transition: 0.5s ease;
 	transition: 0.5s ease;
 }
-.el-list.mo-top24 .el-button.sprite-edit { top: 24px; right: 6px; }
-.el-list.mo-top24 .el-button.sprite-video { top: 6px; right: 4px; }
+.el-list.mo-top24 .el-button.mo-stripped { width: 13px; right: 5px; }
 
 
 /* ************************************************************ *
@@ -335,18 +338,18 @@
 .el-input {
 	-moz-box-sizing: border-box;
 	-moz-transition: border-color 0.2s ease 0s;
+	border-right: 1px solid #CCCCCC;
 	background-color: #FFFFFF;
 	border-top-left-radius: 3px;
 	border-top-right-radius: 3px;
 	border-bottom-left-radius: 3px;
 	border-bottom-right-radius: 3px;
 	font-size: 14px;
-	height: 24px;
-	line-height: 22px;
+/*	height: 24px;*/
+	line-height: 0;
 	margin: 0 0 2px;
 	overflow: hidden;
 	position: relative;
-	border: 1px solid #CCCCCC;
     box-shadow: 0 1px 2px #EEEEEE inset;
 }
 .el-input label {
@@ -354,8 +357,8 @@
 	position: relative;
 	border: medium none;
 	height: 100%;
-	line-height: 22px;
-	overflow: hidden;
+/*	line-height: 22px;
+*/	overflow: hidden;
 	padding: 0;
 	width: 100%;
 }
@@ -364,10 +367,13 @@
 	border: 0 none;
 	display: inline-block;
 	font-size: 13px;
+	height: 19px;
 	margin: 0;
 	outline: medium none;
 	padding: 2px 4px 3px;
 	width: 100%;
+	border: 1px solid #CCCCCC;
+	
 }
 
 
@@ -388,15 +394,17 @@
  * bl-dropdown
  * ************************************************************ */
 .bl-dropdown .el-button {
-	position: absolute;
-	top: -1px;
-	bottom: -1px;
-	right: -1px;
 	padding: 0;
-	line-height: 28px;
-	width: 25px;
 	text-align: center;
 	border-radius: 0px 4px 4px 0px;
+}
+.bl-dropdown .el-button.sprite-magnifier {
+	float: right;
+	border-radius: 0px 3px 3px 0;
+	margin-left: -1px;
+}
+.bl-dropdown .el-button.sprite-magnifier button {
+	height: 22px;
 }
 
 
