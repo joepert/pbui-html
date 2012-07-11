@@ -1,5 +1,5 @@
-/**, html { font-size: 49px; }
-*/
+html { font-size: 11px; font-family: 'verdana'; }
+
 
 /* ************************************************************ *
  * ELEMENTS
@@ -99,11 +99,11 @@
 	-o-user-select:none;
 	user-select:none;
 	
-	-webkit-transition: 0.5s ease;
-	-moz-transition: 0.5s ease;
-	-ms-transition: 0.5s ease;
-	-o-transition: 0.5s ease;
-	transition: 0.5s ease;
+	-webkit-transition: 0.25s ease;
+	-moz-transition: 0.25s ease;
+	-ms-transition: 0.25s ease;
+	-o-transition: 0.25s ease;
+	transition: 0.25s ease;
 	display: table;
 }
 .el-button > button {
@@ -163,11 +163,11 @@
 	border-style: solid;
 	border-width: 1px;
 	
-	-webkit-transition: 0.5s ease;
-	-moz-transition: 0.5s ease;
-	-ms-transition: 0.5s ease;
-	-o-transition: 0.5s ease;
-	transition: 0.5s ease;
+	-webkit-transition: 0.25s ease;
+	-moz-transition: 0.25s ease;
+	-ms-transition: 0.25s ease;
+	-o-transition: 0.25s ease;
+	transition: 0.25s ease;
 }
 
 /* el-button - mo-add */
@@ -323,15 +323,30 @@
 	border-style: solid;
 	border-width: 1px;
 	
-	-webkit-transition: 0.5s ease;
-	-moz-transition: 0.5s ease;
-	-ms-transition: 0.5s ease;
-	-o-transition: 0.5s ease;
-	transition: 0.5s ease;
+	-webkit-transition: 0.25s ease;
+	-moz-transition: 0.25s ease;
+	-ms-transition: 0.25s ease;
+	-o-transition: 0.25s ease;
+	transition: 0.25s ease;
 }
 .el-list.mo-top24 .el-button.mo-stripped { width: 13px; right: 5px; }
 .el-list.mo-top24 .el-button.sprite-edit { top: 27px; }
 .el-list.mo-top24 .el-button.sprite-video { top: 7px; }
+
+/* el-list - mo-checklist */
+.el-list.mo-checklist {
+}
+.el-list.mo-checklist > span {}
+.el-list.mo-checklist .el-icon {
+	position: absolute;
+	top: 6px;
+	left: 0;
+}
+.el-list.mo-checklist li {
+	position: relative;
+	line-height: 25px;
+	padding-left: 20px;
+}
 
 
 /* ************************************************************ *
@@ -378,6 +393,20 @@
 	
 }
 
+/* ************************************************************ *
+ * el-overlay
+ * ************************************************************ */
+
+.el-overlay {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	
+	background-color: rgb(0,0,0); opacity: 0.5;
+	background-color: rgba(0,0,0,0.5);
+}
 
 /* ************************************************************ *
  * BLOCK
@@ -415,7 +444,6 @@
  * ************************************************************ */
 
 .bl-schedular-menu {
-	width: 202px;
 	padding-top: 10px;
 }
 .bl-schedular-menu .bl-scroll {
@@ -442,6 +470,34 @@
 }
 .bl-schedular-menu .el-list.mo-top24 .el-button.sprite-edit { top: 27px; }
 .bl-schedular-menu .el-list.mo-top24 .el-button.sprite-video { top: 7px; }
+
+/* bl-advanced-filter-list */
+.bl-advanced-filter-list {
+	position: absolute;
+	top: 300px;
+	left: 50%;
+	padding: 10px 20px 10px 10px;
+	width: 180px;
+	margin-left: -105px;
+	line-height: 15px;
+	background: #ffffff;
+	border: 1px solid #cecece;
+}
+.bl-advanced-filter-list .el-list.mo-checklist {
+	margin-bottom: 10px;
+}
+.bl-advanced-filter-list > span { display: block; }
+.bl-advanced-filter-list .sprite-close {
+	position: absolute;
+	top: 8px;
+	right: 8px;
+}
+.bl-advanced-filter-list .el-button {
+	padding-left: 14px;
+	padding-right: 14px;
+	line-height: 20px;
+}
+.bl-advanced-filter-list .el-button button { font-size: 13px; }
 
 
 
